@@ -1,0 +1,90 @@
+.faq {
+    padding: 5.6vw;
+    max-width: 65%;
+    margin: 0 auto;
+    
+
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    &__questions {
+        text-decoration: none;
+        
+        &__item {
+            background-color:  #051eff;
+            margin-bottom: 16px;
+            text-decoration: none;
+
+            P {
+                color: #fff;
+                
+            }
+                span {
+                    color: #fff;
+                }
+            
+
+
+            &__question {
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                padding: 24px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+                color: #fff;
+
+                
+                &::after {
+                    content: '☰';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 30px;
+                }
+            }
+
+            &__answer {
+                height: 0px;
+                overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
+
+                &__space {
+                    margin: 16px;
+                    color: #fff;
+
+                    &__linha {
+                        margin: 28px;
+                        text-decoration: none;
+                    }
+                }
+                
+
+            }
+
+            &--is-open {
+                .faq__questions__item__question::after {
+                    content: '-';
+                }
+                .faq__questions__item__answer {
+                    height: auto;
+                    padding-bottom: 24px;
+                    transition: height, .5s ease;
+    
+                }
+            }
+        }
+    }
+}
+
+

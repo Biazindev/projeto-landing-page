@@ -1,0 +1,101 @@
+.footer {
+        padding: 26px 8px;
+        background-color: #080808;
+        &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+        
+        &__select { 
+            margin: 0 auto;
+            display: flex;
+        }
+
+        &__language-selector {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            img {
+                height: 18px;
+                width: 18px;
+                margin-right: 2px;
+            }
+                select {
+                    background-color: transparent;
+                    border: none;
+                    color: #000;
+                    height: 38px;
+                    margin: 0 auto;
+                    &:hover {
+                        color:  #f9f9f9;
+                    }
+                    option {
+                        color: #040714;
+                    }
+                }
+            
+        }
+
+        img {
+            align-items: center;
+            margin: 0 auto;
+            
+        }
+
+        h2 {
+            color: #fff;
+        }
+    }
+
+    &__logo {
+        width: 20px;
+        margin-left: 600px;
+        align-items: center;
+    }
+
+    &__links {
+        margin-bottom: 16px;
+        display: flex;
+        
+
+        
+        
+        &__item {
+            display: inline-block;
+            margin: 0 auto;
+            a {
+                color: #fff;
+                margin: 0 auto;
+                padding-top: 10px;
+                text-decoration: none;
+                display: block;
+                &:hover {
+                    color:  #f9f9f9;
+                }
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}
+
+.space {
+    padding: 5.6vw;
+    padding: 16px;
+    span {
+        margin-left: 500px;
+        display: flex;
+        color: #fff;
+        padding-top: 24px;
+    }
+}
+
+
