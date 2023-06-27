@@ -1,8 +1,13 @@
 .display {
     padding: 5.6vw;
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 23%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 33%;
+
+    @media (max-width: 767px) {
+        padding: 0;
+        margin-top: -150px;
+    }
 
     &__container {
         &__nav {
@@ -14,6 +19,7 @@
                 color: #fff;
                 font-size: 40px;
                 font-weight: 400;
+                padding-top: 40px;
             }
 
             p {
@@ -33,6 +39,10 @@
                 justify-content: center;
                 margin: 0 auto;
                 
+                @media (max-width: 767px) {
+                    display: block;
+                }
+
                 &__item {
                     width: 25%;
                     padding: 10px;

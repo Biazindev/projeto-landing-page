@@ -3,6 +3,10 @@
     max-width: 65%;
     margin: 0 auto;
     
+    @media (max-width: 767px) {
+        max-width: 90%;
+        padding: 0;
+    }
 
     h2 {
         text-align: center;
@@ -39,6 +43,7 @@
                 cursor: pointer;
                 position: relative;
                 color: #fff;
+                font-size: 14px;
 
                 
                 &::after {
